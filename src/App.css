@@ -1,0 +1,333 @@
+/* ====== GOOGLE FONTS ====== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;600;700&display=swap');
+
+/* ====== GENERAL PAGE STYLE ====== */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-weight: 500; /* 🔥 base boldness */
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5AFAF;
+  color: #5d5a5a;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-weight: 500;
+}
+
+/* MAIN CONTENT - CENTERED */
+.content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== HEADER ====== */
+header {
+  background-color: #FD8A6B;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* LOGO + TITLE */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  border-radius: 10px;
+}
+
+/* TITLE */
+.logo h1 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0;
+  font-weight: 900;  /* 🔥 bold */
+  font-size: 26px;   /* 🔥 bigger */
+}
+
+/* ====== NAVIGATION ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 6px 12px;
+  font-weight: 600;  /* 🔥 bold */
+  font-size: 16px;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* ====== SECTION TITLES ====== */
+h2, h3 {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  color: #b03060;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700; /* 🔥 bold */
+  font-size: 22px;
+}
+
+h4 {
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  color: #b03060;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* ====== TEXT ====== */
+p, li, label {
+  font-weight: 500; /* 🔥 mas visible */
+  font-size: 15px;
+}
+
+/* ====== SECTIONS ====== */
+section,
+.hero,
+.highlights,
+.preview,
+.content {
+  padding: 20px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  margin: 20px auto;
+  backdrop-filter: blur(5px);
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ====== IMAGE LAYOUT ====== */
+.hero,
+.highlights,
+.preview-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ====== IMAGES ====== */
+.hero img,
+.highlights img,
+.preview-images img,
+.content img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  padding: 8px;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero img:hover,
+.highlights img:hover,
+.preview-images img:hover,
+.content img:hover {
+  transform: translateY(-8px) rotate(-2deg) scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+}
+
+/* ====== FORM ====== */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+input, textarea, button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600; /* 🔥 bold */
+  font-size: 14px;
+}
+
+/* BUTTON */
+button {
+  background-color: #FDB777;
+  cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: white;
+}
+
+/* ====== REGISTER FORM ====== */
+.register-form {
+  background: rgba(255, 255, 255, 0.4);
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ====== QUIZ BOX ====== */
+.quiz-box {
+  background: #fff;
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ====== TABLE ====== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+th, td {
+  border: 2px solid black;
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #FD8A6B;
+  color: #333;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: auto;
+  font-weight: 600;
+}
+
+/* ====== NAVBAR (FINAL BOLD + FIXED) ====== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 25px 30px;
+  background: #FD8A6B;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* GROUPS */
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* LOGO */
+.nav-left .logo {
+  font-size: 22px;
+  font-weight: 900; /* 🔥 bold */
+  text-decoration: none;
+  color: white;
+}
+
+/* LINKS */
+.nav-center a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700; /* 🔥 bold */
+  font-size: 16px;
+}
+
+/* AUTH */
+.nav-right a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+/* BUTTON */
+.logout-btn {
+  background: #ee8753;
+  color:black;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.darkmode-btn {
+  margin-right: 5px; /* 👈 konting left move */
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.mode-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 5px; /* 👈 slight left adjustment */
+}
+.dark {
+  background-color: #656363;
+  color: white;
+}
+
+.dark .navbar {
+  background: #FD8A6B;
+}
