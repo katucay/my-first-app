@@ -16,22 +16,13 @@ const app = express();
 // Connect DB
 connectDB();
 
-// ✅ CORS Configuration (Local + Production)
+// backend/server.js — update with your actual Vercel URL
 app.use(cors({
-  origin: function (origin, callback) {
-    const allowedOrigins = [
-      'http://localhost:3000',
-      'https://thefolio.vercel.app' // ⚠️ change if your Vercel URL is different
-    ];
-
-    // allow requests with no origin (Postman, mobile apps, etc.)
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true,
+origin: [
+'http://localhost:3000',
+'https://my-first-app-3.onrender.com/api', // ← your exact Vercel domain
+],
+credentials: true,
 }));
 
 // Middleware

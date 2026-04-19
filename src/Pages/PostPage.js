@@ -67,7 +67,8 @@ commentBody });
  return (
  <div className='post-page'>
  {post.image && (
- <img src={`http://localhost:5000/uploads/${post.image}`}
+ <img src={`${process.env.REACT_APP_API_URL?.replace('/api',
+'')}/uploads/${post.image}`}
  alt={post.title} className='post-image' />
  )}
  <h1>{post.title}</h1>
